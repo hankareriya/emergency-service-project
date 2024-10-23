@@ -121,5 +121,5 @@ class TomAndJerryGame:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    game = TomAndJerryGame(root, language='en')  
+    game = TomAndJerryGame(root, language='fr')  
     root.mainloop()
