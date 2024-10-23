@@ -1,0 +1,9 @@
+def load_translations(self):
+    """Load translations from JSON files."""
+    try:
+        with open(f"locales/{self.language}.json", "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(f"Translation for '{self.language}' not found. Defaulting to English.")
+        with open(f"locales/en.json", "r") as file:
+            return json.load(file)
